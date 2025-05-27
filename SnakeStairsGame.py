@@ -49,7 +49,7 @@ class Player:
             self.snakes += 1
 
         # If the player has immunity, restore their position and remove immunity
-        if self.imunity == 1:
+        if self.imunity == 1 and last_position!=self.position:
             self.imunity = 0
             self.position = last_position
 
